@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --black: #0e0f13;
+    --skills-gradient: #00000099;
+    --input-form-color: #212529;
+    --secondary: #343a40;
+    --scrollbar-color: #424242;
+    --main-shadow: #6c757d;
+    --overview-layer: #7e7c7c81;
+    --white: #f3f4f6;
+    --placeholder-color: #8e98a1;
+    --primary: #e1e1e1;
+    --focus-color: #ced4da;
+    --hover-color: #d1d1d1;
+    --svg-color: #cfcfcfcc;
+    --active-color: #bcbebf;
+    --active-color-nav: #3b82f6;
+    --active-color-hover-nav: #5ba8e8;
+}
+
+.dark-mode {
+    --white: #0e0f13;
+    --primary: #343a40;
+    --placeholder-color: #495057;
+    --focus-color: #424242;
+    --hover-color: #495057;
+    --black: #f3f4f6;
+    --secondary: #d7d4d4;
+    --input-form-color: #e1e1e1;
+    --skills-gradient: #cfcfcf99;
+    --scrollbar-color: #c2c9cf;
+    --svg-color: #8e98a1;
+    --active-color: #2c3237;
+    --active-color-nav: #197de1;
+    --active-color-hover-nav: #2b8ae8;
+}
+
+::selection {
+    color: var(--black);
+    background-color: var(--primary);
+}
+
+body {
+    background-color: var(--black);
+
+    &::-webkit-scrollbar {
+        width: 11px
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-color);
+        border-radius: 5px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-gray {
+    color: var(--primary) !important;
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+.title-section {
+    color: var(--white);
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 45px;
+    }
+}
+
+.main-card {
+    border: 2px solid var(--secondary);
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 0 0 6px var(--main-shadow);
+        transform: scale(1.01);
+    }
+}
+
+.custom-btn-light {
+    color: var(--black) !important;
+    background-color: var(--white) !important;
+    ;
+    border: 1px solid var(--secondary);
+    transition: all .2s;
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
+
+    &:active {
+        color: var(--black) !important;
+        box-shadow: none;
+        background-color: var(--active-color) !important;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    @media screen and (min-width: 992px) {
+        max-width: 920px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1150px;
+    }
+}

@@ -1,0 +1,55 @@
+<!-- <app-loader></app-loader> -->
+<section class="landingSection text-center mt-4 mt-md-0 text-lg-start d-flex flex-column justify-content-center">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+            <h1 class="fw-bold">Abdalrhman Gamal</h1>
+            <h2 class=" fw-light h4">
+                Hi, I'm a passionate Front-End Developer with a strong foundation in HTML, CSS, JavaScript, and Angular.
+                Eager to collaborate with experts, contribute to success, and enhance abilities.
+            </h2>
+            <div class="social mt-4 mb-1">
+                <a href="https://github.com/abdalrhman80" target="_blank"> <i
+                        class="fs-4 me-2 fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdalrhman-gamal/" target="_blank"> <i
+                        class="fs-4 mx-2 fa-brands fa-linkedin"></i></a>
+                <a href="mailto:abdalrhmangamel681@gmail.com" target="_blank"> <i
+                        class="fs-4 mx-2 fa-solid fa-at"></i></a>
+                <a href="https://www.facebook.com/boo.dii.52" target="_blank"> <i
+                        class="fs-4 mx-2 fa-brands fa-facebook-square"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=201067377533&text&type=phone_number&app_absent=0"
+                    target="_blank"> <i class="fs-4 mx-2 fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <p-carousel [value]="mySkills" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="2000"
+                [showIndicators]="false">
+                <ng-template let-skill pTemplate="item">
+                    <div class="border-1 surface-border border-round text-center">
+                        <div class="mb-3">
+                            <img [src]="skill.src" [alt]="skill.alt">
+                        </div>
+                        <div>
+                            <h4 class="mb-1 color-gray fs-5">{{skill.title}}</h4>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+    
+    <div class="buttons mt-4">
+        <a href="https://flowcv.com/resume/ss87ds6p6b" class="buttons-container me-2 my-2 font-sm" target="_blank">
+            <button class="btn custom-btn-outline-light fs-6 rounded-3 ">
+                <span class="me-2">Download CV</span>
+                <i class="fa-solid fa-download me-1"></i>
+            </button>
+        </a>
+        <div class="buttons-container ms-2 my-2 font-sm" routerLink="/Contact">
+            <button class="btn custom-btn-outline-light fs-6 rounded-3 ">
+                <span class="me-2">Let's Talk</span>
+                <i class="fa-solid fa-comment me-1"></i>
+            </button>
+        </div>
+    </div>
+</section>

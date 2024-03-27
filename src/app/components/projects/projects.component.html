@@ -1,0 +1,38 @@
+<!-- <app-loader></app-loader> -->
+<section class="projectSection my-4 ">
+    <h3 class=" title-section">Projects</h3>
+    <div class="container">
+        <div class="projects mt-4">
+            <div class="row g-3">
+                <div class="col-xl-4 col-lg-6 px-0" *ngFor="let project of projects">
+                    <div class="project-card main-card cursor-pointer p-4 py-4 mx-2 rounded-4 mb-3 mb-lg-0"
+                        (click)="showProjectDes(project, $event)">
+                        <div class="card-header pb-2 ">
+                            <h5 class="my-2 fw-bolder">{{project.title}}</h5>
+                            <a [href]="project.demo" target="_blank" pTooltip="Live demo" tooltipPosition="top">
+                                <i class="fa-solid fa-link color-gray"></i>
+                            </a>
+                        </div>
+                        <div class="card-body pb-2 my-3 ">
+                            <p class="mb-0 color-gray fw-lighter">
+                                {{project.description.split(" ").slice(0, 10).join(" ")}}...</p>
+                            <div class="date d-inline-block rounded-pill px-3 mt-4 mb-2">{{project.date}}</div>
+                        </div>
+                        <div class="card-footer d-flex flex-wrap">
+                            <div class="d-flex flex-wrap link-technology"
+                                *ngFor="let technology of project.technologies">
+                                <a *ngIf="technology.src" class="link-technology" [href]="technology.DocsLink"
+                                    target="_blank">
+                                    <figure class="me-2 mb-2 rounded link-technology" [pTooltip]="technology.alt"
+                                        tooltipPosition="bottom">
+                                        <img [src]='technology.src' [alt]="technology.alt" class="link-technology">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

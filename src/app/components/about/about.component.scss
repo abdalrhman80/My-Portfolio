@@ -1,0 +1,25 @@
+h4 {
+    span {
+        border-bottom: 3px solid var(--placeholder-color);
+    }
+}
+
+.about-description {
+    line-height: 1.8;
+
+    @media screen and (max-width: 576px) {
+        font-size: 18px !important;
+    }
+}
+
+.why-me {
+    img {
+        width: 200px;
+        height: 200px;
+
+        @media screen and (max-width: 576px) {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

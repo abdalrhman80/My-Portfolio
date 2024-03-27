@@ -1,0 +1,60 @@
+<nav class="navbar py-lg-0 navbar-expand-lg color-gray fw-medium position-sticky top-0 z-3">
+    <div class="container">
+        <a class="navbar-brand  cursor-pointer color-gray" routerLink="landing">
+            <i class="fa-solid fa-code me-2"></i>
+            <span>Abdalrhman</span>
+        </a>
+        <button class="navbar-toggler color-gray border-0 p-2" type="button" (click)="sidebarVisible = true">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                <li class="nav-item cursor-pointer p-2 mx-lg-2" routerLink="landing" routerLinkActive="active-link">
+                    <a class="nav-link color-gray">
+                        <i class="fas fa-home me-lg-0 me-xl-2 me-2 fs-6 "></i>
+                        <span class="d-lg-none d-xl-inline fs-6 ">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item cursor-pointer p-2 mx-lg-2" routerLink="About" routerLinkActive="active-link">
+                    <a class="nav-link color-gray">
+                        <i class="fas fa-user-alt me-lg-0 me-xl-2 me-2 fs-6 "></i>
+                        <span class="d-lg-none d-xl-inline fs-6 ">About</span>
+                    </a>
+                </li>
+                <li class="nav-item cursor-pointer p-2 mx-lg-2" routerLink="Skills" routerLinkActive="active-link">
+                    <a class="nav-link color-gray">
+                        <i class="fas fa-cogs me-lg-0 me-xl-2 me-2 fs-6 "></i>
+                        <span class="d-lg-none d-xl-inline fs-6 ">Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item cursor-pointer p-2  mx-lg-2" routerLink="Projects" routerLinkActive="active-link">
+                    <a class="nav-link color-gray">
+                        <i class="fa-solid fa-cube me-lg-0 me-xl-2 me-2  fs-6"></i>
+                        <span class="d-lg-none d-xl-inline fs-6 ">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item cursor-pointer p-2 mx-lg-2" routerLink="Contact" routerLinkActive="active-link">
+                    <a class="nav-link color-gray">
+                        <i class="fa-solid fa-link me-lg-0 me-xl-2 me-2  fs-6"></i>
+                        <span class="d-lg-none d-xl-inline fs-6 ">Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-3 mx-lg-2 ">
+                <li class="nav-item cursor-pointer p-2 fs-6 " (click)="toggleDarkMode()">
+                    <div *ngIf="!darkModeFlag" class="nav-link toggle-dark-mode color-gray">
+                        <i class="fa-regular fa-moon "></i>
+                        <span class="ms-2 d-lg-none">Dark Mode</span>
+                    </div>
+                    <div *ngIf="darkModeFlag" class="nav-link toggle-dark-mode color-gray">
+                        <i class="fa-regular fa-sun "></i>
+                        <span class="ms-2 d-lg-none">Light Mode</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<app-sidebar [sidebarVisible]="sidebarVisible" (sidebarHide)="toggleSidebar($event)"></app-sidebar>

@@ -1,0 +1,30 @@
+.skill-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-shadow);
+
+    .skill-title-before {
+        width: 30px;
+        height: 1px;
+    }
+
+    .skill-title-after {
+        flex: 1 0 30px;
+        height: 1px;
+    }
+
+    .skill-title-before,
+    .skill-title-after {
+        background-color: var(--main-shadow);
+    }
+}
+
+.skill-card {
+    border-width: 1px;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}

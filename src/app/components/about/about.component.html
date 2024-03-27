@@ -1,0 +1,48 @@
+<section class="aboutSection my-4">
+    <h3 class=" title-section">About</h3>
+    <div class="About mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="assets/images/about-me.svg" alt="about-img">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mb-4">
+                    <h4 class="color-gray about-title fs-2 fw-bolder mb-3">
+                        <span>Who am I?</span>
+                    </h4>
+                    <p class=" about-description color-gray fs-5  mb-3">
+                        Hello again! I am happy to see you here. My name is
+                        Abdalrhman Gamal, 22 years old, graduated from Beni-Suef University,
+                        i have bachelor degree in Computer Science.
+                        Passionate about creating engaging user experiences, translates designs into functional websites
+                        and applications with creativity and expertise. Committed to staying updated with industry
+                        trends.</p>
+                    <button class="btn custom-btn-light py-2 px-3 rounded-2 fw-medium " routerLink="/Contact">
+                        Hire me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-me mt-5">
+        <h4 class="color-gray fs-2 fw-bolder text-center mb-5">
+            <span>Why me?</span>
+        </h4>
+        <div class="row gx-4 gy-2">
+            <div class="col-lg-4 col-md-6" *ngFor="let card of cards">
+                <div class="d-flex flex-column align-items-center justify-content-center p-4
+                    text-center mb-3 main-card rounded-2">
+                    <img [src]="card.Src" class="mb-3 " [alt]="card.alt">
+                    <h5 class="color-gray fs-3 fw-bolder">{{card.title}} </h5>
+                    <p class="color-gray fs-6 mb-3">
+                        {{card.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<!-- <app-loader></app-loader> -->
+<section class="Skills my-4 ">
+    <h3 class=" title-section">Skills</h3>
+    <div class="container">
+        <div class="skill mb-3" *ngFor="let skill of skills">
+            <div class="skill-title">
+                <div class="skill-title-before "></div>
+                <p class="fs-5 mx-3 mt-2">{{skill.skillTitle}}</p>
+                <div class="skill-title-after "></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 px-0" *ngFor="let item of skill.skillItems">
+                    <a [href]="item.DocsLink" target="_blank">
+                        <div class="skill-card main-card cursor-pointer position-relative p-3 py-4 mx-2 rounded-4 mb-3 mb-lg-0 "
+                            style="background:linear-gradient(90deg, var(--black) 0%, var(--black) 60%, var(--skills-gradient) 100%),
+                    no-repeat right 40%/40%  url({{item.imgSrc}})">
+                            <p class="mb-0  color-gray fw-medium">{{item.title}}</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

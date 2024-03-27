@@ -1,0 +1,52 @@
+<p-sidebar [(visible)]="sidebarVisible" (onHide)="toggleSidebar()" position="right" [baseZIndex]="10000"
+    [style]="{backgroundColor: 'var(--black)',color:'var(--primary)',width: '60%'}">
+    <ng-template pTemplate="content">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+            <li class="nav-item mb-2 cursor-pointer p-2 mx-lg-2" (click)="sidebarVisible = false" routerLink="landing"
+                routerLinkActive="active-link">
+                <a class="nav-link color-gray">
+                    <i class="fas fa-home me-lg-0 me-xl-2 me-2 fs-6 "></i>
+                    <span class="d-lg-none d-xl-inline fs-6 ">Home</span>
+                </a>
+            </li>
+            <li class="nav-item cursor-pointer p-2 mx-lg-2" (click)="sidebarVisible = false" routerLink="About"
+                routerLinkActive="active-link">
+                <a class="nav-link color-gray">
+                    <i class="fas fa-user-alt me-lg-0 me-xl-2 me-2 fs-6 "></i>
+                    <span class="d-lg-none d-xl-inline fs-6 ">About</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2 cursor-pointer p-2 mx-lg-2" (click)="sidebarVisible = false" routerLink="Skills"
+                routerLinkActive="active-link">
+                <a class="nav-link color-gray">
+                    <i class="fas fa-cogs me-lg-0 me-xl-2 me-2 fs-6 "></i>
+                    <span class="d-lg-none d-xl-inline fs-6 ">Skills</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2 cursor-pointer p-2  mx-lg-2" (click)="sidebarVisible = false" routerLink="Projects"
+                routerLinkActive="active-link">
+                <a class="nav-link color-gray">
+                    <i class="fa-solid fa-cube me-lg-0 me-xl-2 me-2  fs-6"></i>
+                    <span class="d-lg-none d-xl-inline fs-6 ">Projects</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2 cursor-pointer p-2 mx-lg-2" (click)="sidebarVisible = false" routerLink="Contact"
+                routerLinkActive="active-link">
+                <a class="nav-link color-gray">
+                    <i class="fa-solid fa-link me-lg-0 me-xl-2 me-2  fs-6"></i>
+                    <span class="d-lg-none d-xl-inline fs-6 ">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item mb-2 cursor-pointer p-2 mx-lg-2 fs-6" (click)="toggleDarkMode()">
+                <div *ngIf="!darkModeFlag" class="nav-link toggle-dark-mode color-gray">
+                    <i class="fa-regular fa-moon "></i>
+                    <span class="ms-2">Dark Mode</span>
+                </div>
+                <div *ngIf="darkModeFlag" class="nav-link toggle-dark-mode color-gray">
+                    <i class="fa-regular fa-sun "></i>
+                    <span class="ms-2">Light Mode</span>
+                </div>
+            </li>
+        </ul>
+    </ng-template>
+</p-sidebar>

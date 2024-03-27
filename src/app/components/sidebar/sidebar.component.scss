@@ -1,0 +1,22 @@
+@import '../navbar/navbar.component.scss';
+
+:host ::ng-deep {
+    .p-sidebar-right {
+        width: 300px;
+        background-color: var(--black);
+        color: var(--primary);
+
+        @media screen and (max-width: 576px) {
+            width: 60%;
+        }
+    }
+
+    .p-sidebar .p-sidebar-header .p-sidebar-close,
+    .p-sidebar .p-sidebar-header .p-sidebar-icon {
+        color: var(--svg-color);
+
+        &:enabled:hover {
+            background-color: var(--secondary);
+        }
+    }
+}

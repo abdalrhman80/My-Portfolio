@@ -1,0 +1,66 @@
+<!-- <app-loader></app-loader> -->
+<p-toast [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+
+<section class="Contact my-4">
+    <h3 class=" title-section">Contact</h3>
+    <div class="container d-flex flex-column justify-content-center mt-4">
+        <div class="row">
+            <div class="col-lg-5 mb-3">
+                <div class="contact-info">
+                    <h4 class=" mb-3 color-gray h2 fw-bold contact-info-heading">
+                        <span>Get in touch</span>
+                    </h4>
+                    <p class="color-gray mb-4">
+                        I’m currently looking for any new opportunities, my inbox is always open. Whether you have a
+                        question or just want to say hi, I’ll try my best to get back to you!
+                    </p>
+                    <div class="info d-flex">
+                        <i class="fa-solid fw-bold fa-signature me-2 mt-1"></i>
+                        <p class="color-gray fw-medium mb-3">Abdalrhman Gamal Hosny</p>
+                    </div>
+                    <div class="info d-flex">
+                        <i class="fa-solid fw-bold fa-phone me-2 mt-1"></i>
+                        <a href="tel:01067377533" class="color-gray fw-medium mb-3" target="_blank">
+                            01067377533
+                        </a>
+                    </div>
+                    <div class="info d-flex align-items-start">
+                        <i class="fa-solid fw-bold fa-envelope me-2 mt-1"></i>
+                        <a href="mailto:abdalrhmangamel681@gmail.com" class="color-gray fw-medium mb-3" target="_blank">
+                            abdalrhmangamel681@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7  mb-2">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm)">
+                    <div>
+                        <div class="mb-4">
+                            <input type="text" formControlName="name" class="form-control rounded p-2"
+                                placeholder="Your Name" />
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="email" formControlName="email" class="form-control rounded p-2"
+                                placeholder=" Your Email" />
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="text" formControlName="subject" class="form-control rounded p-2"
+                                placeholder=" Subject" />
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control rounded p-2" formControlName="message" rows="5"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <button [disabled]="contactForm.invalid" type="submit"
+                        class="btn custom-btn-light p-2 rounded-3 w-50 mx-auto d-block">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

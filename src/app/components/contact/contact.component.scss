@@ -1,0 +1,52 @@
+.container {
+    height: 70vh;
+
+    @media screen and (max-width: 992px) {
+        height: auto;
+    }
+}
+
+.form-control {
+    background-color: var(--input-form-color);
+    color: var(--white);
+    border: none;
+
+    &:focus {
+        box-shadow: 0 0 0 0.1rem var(--focus-color);
+    }
+
+    &::placeholder {
+        color: var(--placeholder-color);
+        font-size: 14px;
+    }
+}
+
+.info {
+    font-size: 17px;
+
+    &:first-of-type p{
+        font-family: "Dancing Script", cursive;
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 15px;
+    }
+
+    i {
+        color: var(--placeholder-color);
+    }
+}
+
+.contact-info-heading span {
+    border-bottom: 2px solid var(--placeholder-color);
+}
+
+.custom-btn-light {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+textarea {
+    resize: none;
+}

@@ -1,0 +1,99 @@
+.landingSection {
+    height: 90vh;
+
+    h1 {
+        font-size: 70px;
+        color: var(--white);
+        font-family: "Dancing Script", cursive;
+    }
+
+    h2,
+    .social a {
+        color: var(--placeholder-color);
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        margin-top: 100px !important;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 568px) {
+        margin-top: 40px !important;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+
+        @media screen and (max-width: 576px) {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    i:not(.buttons i) {
+        cursor: pointer;
+        transition: color .2s;
+
+        &:hover {
+            color: var(--white);
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 992px) {
+            justify-content: center;
+        }
+
+        .buttons-container {
+            .custom-btn-outline-light {
+                background-color: transparent;
+                border: 1px solid var(--white);
+                color: var(--white);
+                transition: color .15s ease-in-out, background-color .15s ease-in-out,
+                    border-color .15s ease-in-out;
+            }
+
+            &:hover {
+                .custom-btn-outline-light {
+                    background-color: var(--white);
+                    color: var(--black);
+                }
+            }
+        }
+    }
+}
+
+:host ::ng-deep {
+
+    .p-carousel .p-carousel-content .p-carousel-prev,
+    .p-carousel .p-carousel-content .p-carousel-next {
+        border: 1px solid var(--secondary);
+        border-radius: 50%;
+        transition: border 0.3s;
+        width: 27px;
+        height: 27px;
+
+        &:enabled:hover {
+            background-color: transparent;
+            border-color: var(--focus-color);
+            color: var(--focus-color);
+        }
+
+        .p-icon {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
