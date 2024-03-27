@@ -1,23 +1,37 @@
 .skill-title {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: var(--main-shadow);
 
     .skill-title-before {
-        width: 30px;
+        width: 10%;
         height: 1px;
     }
 
     .skill-title-after {
-        flex: 1 0 30px;
+        flex: 1 0 10%;
         height: 1px;
     }
 
     .skill-title-before,
     .skill-title-after {
         background-color: var(--main-shadow);
+    }
+
+    @media screen and (max-width:568px) {
+        .skill-title-before {
+            width: 10%;
+        }
+
+        .skill-title-after {
+            flex: 1 0 35%;
+        }
+
+        p {
+            font-size: 16px !important;
+        }
     }
 }
 
