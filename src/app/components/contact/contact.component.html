@@ -34,7 +34,7 @@
             </div>
 
             <div class="col-lg-7  mb-2">
-                <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm)">
+                <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
                     <div>
                         <div class="mb-4">
                             <input type="text" formControlName="name" class="form-control rounded p-2"
