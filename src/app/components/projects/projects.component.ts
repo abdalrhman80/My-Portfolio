@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
       description: 'E-Commerce website comes equipped with a range of features that include simplified user management (registration, login, and password reset), product browsing, product description viewing, adding and removing products from your cart, adding and removing products from your wishlist, and secure online payment transactions through an integrated payment gateway.',
       demo: 'https://abdalrhman80.github.io/Fresh-Cart-App',
       githubLink: 'https://github.com/abdalrhman80/Fresh-Cart-App',
-      date: 'Feb 27 2024',
+      date: 'Feb 26 2024',
       technologies: [
         { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
         { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
@@ -55,6 +55,25 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
+      title: 'Todo-List',
+      description: 'A simple Todo List application. The app allows users to add, edit, and delete tasks.',
+      demo: 'https://abdalrhman80.github.io/Todo-List/',
+      githubLink: 'https://github.com/abdalrhman80/Todo-List/',
+      date: 'Mar 14 2024',
+      technologies: [
+        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+        { src: 'assets/images/typescript.svg', alt: 'TypeScript', DocsLink: 'https://www.typescriptlang.org/' },
+        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
+        { src: 'assets/images/angular.svg', alt: 'Angular', DocsLink: 'https://angular.io/' },
+        { src: '', alt: 'Api', DocsLink: '' },
+      ],
+      overview: [
+        'assets/images/overview-Images/Todo-List/Todo-List1.png',
+        'assets/images/overview-Images/Todo-List/Todo-List2.png',
+      ]
+    },
+    {
       title: 'Personal Dashboard',
       description: 'The website consists of three main sections: Bookmark, Todo, and Note, You can easily add, update, or delete bookmarks, todos, and notes, Customize your experience by changing the background with random ',
       demo: 'https://abdalrhman80.github.io/Personal-Dashboard/bookmarks',
@@ -73,6 +92,22 @@ export class ProjectsComponent implements OnInit {
         'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard2.png',
         'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard3.png',
         'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard4.png',
+      ]
+    },
+    {
+      title: 'Bookmark',
+      description: `Application on CRUD operations, A user-friendly website URL bookmarker that allows you to save and organize your favorite websites with ease.`,
+      demo: 'https://abdalrhman80.github.io/Bookmark/',
+      githubLink: 'https://github.com/abdalrhman80/Bookmark',
+      date: ' Dec 23 2023',
+      technologies: [
+        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
+      ],
+      overview: [
+        'assets/images/overview-Images/Bookmark.png',
       ]
     },
     {
@@ -107,22 +142,6 @@ export class ProjectsComponent implements OnInit {
       overview: [
         'assets/images/overview-Images/Login-System/Login-System1.png',
         'assets/images/overview-Images/Login-System/Login-System2.png',
-      ]
-    },
-    {
-      title: 'Bookmark',
-      description: `Application on CRUD operations, A user-friendly website URL bookmarker that allows you to save and organize your favorite websites with ease.`,
-      demo: 'https://abdalrhman80.github.io/Bookmark/',
-      githubLink: 'https://github.com/abdalrhman80/Bookmark',
-      date: ' Dec 23 2023',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-      ],
-      overview: [
-        'assets/images/overview-Images/Bookmark.png',
       ]
     },
     {
