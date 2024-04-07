@@ -24,6 +24,8 @@ export class ContactComponent implements OnInit {
     this.messageService.add({ severity: 'success', summary: 'Message Sended', detail: 'Thank for your message I will contact you soon' });
   }
   async sendEmail() {
+    this.showSuccess();
+    this.contactForm.reset();
     emailjs.init("OBd9AtgMZJbmFzwY3");
     await emailjs.send("service_ssorf74", "template_bwv2qfq", {
       from_name: this.contactForm.value.name,
@@ -32,8 +34,5 @@ export class ContactComponent implements OnInit {
       message: this.contactForm.value.message,
       from_email: this.contactForm.value.email,
     });
-
-    this.showSuccess();
-    this.contactForm.reset();
   }
 }
