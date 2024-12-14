@@ -38,6 +38,9 @@
 .skill-card {
     border-width: 1px;
 
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+
     &:hover {
         transform: scale(1.01);
     }

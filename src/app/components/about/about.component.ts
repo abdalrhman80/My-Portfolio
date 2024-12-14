@@ -8,21 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   cards: any[] = [
     {
-      title: "Attention to details", Src: 'assets/images/Search.svg', alt: 'Search',
-      description: 'I obsess over every pixel and detail, ensuring seamless user experiences , honed to perfection in every project.'
+      title: "Backend development",
+      Src: 'assets/images/Development.svg',
+      alt: 'Development',
+      description: 'Passionate about developing robust APIs, database structures, and backend systems, leveraging .NET technologies to build efficient applications.'
     },
     {
-      title: "Continuous learning", Src: 'assets/images/Learning.svg', alt: 'Learning',
-      description: 'I\'m trying to stay up-to-date with latest trends, technologies, and best practices in frontend development.'
+      title: "Attention to details",
+      Src: 'assets/images/Search.svg',
+      alt: 'Search',
+      description: 'I focus on writing clean and efficient code, ensuring every aspect of backend logic works flawlessly to deliver a reliable experience.'
     },
     {
-      title: "Responsive design", Src: 'assets/images/Responsive.svg', alt: 'Responsive',
+      title: "Continuous learning",
+      Src: 'assets/images/Learning.svg',
+      alt: 'Learning',
+      description: 'I dedicated to learning and stay updated with the latest backend development trends, tools, and best practices, especially in the .NET ecosystem.'
+    },
+    {
+      title: "Responsive design",
+      Src: 'assets/images/Responsive.svg',
+      alt: 'Responsive',
       description: ' I specialize in developing websites that seamlessly adapt across diverse screen sizes and devices.'
     },
-    {
-      title: "Web development", Src: 'assets/images/Development.svg', alt: 'Development',
-      description: 'Now, I study Backend development, and I am excited to develop my skills in it, My journey in development continues.'
-    }
   ]
   ngOnInit(): void {
     $('.aboutSection').fadeOut(0).fadeIn(600);

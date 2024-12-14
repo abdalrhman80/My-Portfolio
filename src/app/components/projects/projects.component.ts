@@ -9,6 +9,60 @@ export class ProjectsComponent implements OnInit {
   chipTextArr: string[] = [];
   projects: any[] = [
     {
+      title: 'Shopping Cart',
+      description: 'MVC E-commerce Website using ASP.NET Core 6, with admin and customer areas, Implemented ASP.NET Core Identity for user management, along with Generic Repository, Unit of Work, and Specification Pattern for clean architecture and reusable queries',
+      demo: 'http://shoppingcart.runasp.net',
+      githubLink: 'https://github.com/abdalrhman80/ShoppingCartMVC',
+      date: 'Nov 15 2024',
+      technologies: [
+        { src: 'assets/images/Csharp.svg', alt: 'Csharp', DocsLink: 'https://dotnet.microsoft.com/en-us/languages/csharp' },
+        { src: 'assets/images/ASP.NET-Core-Boxed.png', alt: 'MVC', DocsLink: 'https://learn.microsoft.com/en-us/aspnet/core/mvc/overview' },
+        { src: 'assets/images/EFCore_Boxed.png', alt: 'EFCore', DocsLink: 'https://learn.microsoft.com/en-us/ef/core' },
+        { src: 'assets/images/stripe.svg', alt: 'stripe', DocsLink: 'https://stripe.com/' },
+        { src: 'assets/images/DotNetCore.svg', alt: 'Identity', DocsLink: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity' },
+      ],
+      overview: [
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_1.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_2.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_3.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_4.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_5.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_6.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_7.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_8.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_9.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_10.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_11.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_12.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_13.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_14.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_15.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_16.png',
+        'assets/images/overview-Images/ShoppingCart/ShoppingCart_17.png',
+      ]
+    },
+    {
+      title: 'Talabat',
+      description: 'Scalable RESTful API using ASP.NET Core 6 with Onion Architecture, leveraging Generic Repository, Unit of Work, and Specification Pattern Integrated JWT authentication, Automapper, Stripe, and ASP.NET Core Identity..',
+      demo: 'https://github.com/abdalrhman80/Talabat',
+      githubLink: 'https://github.com/abdalrhman80/Talabat',
+      date: 'Oct 24 2024',
+      technologies: [
+        { src: 'assets/images/Csharp.svg', alt: 'Csharp', DocsLink: 'https://dotnet.microsoft.com/en-us/languages/csharp' },
+        { src: 'assets/images/ASP.NET-Core-Boxed.png', alt: 'WebAPI', DocsLink: 'https://dotnet.microsoft.com/en-us/apps/aspnet/apis' },
+        { src: 'assets/images/EFCore_Boxed.png', alt: 'EFCore', DocsLink: 'https://learn.microsoft.com/en-us/ef/core' },
+        { src: 'assets/images/JWT.png', alt: 'JWT', DocsLink: 'https://jwt.io/' },
+        { src: 'assets/images/Automapper.png', alt: 'Automapper', DocsLink: 'https://automapper.org/' },
+        { src: 'assets/images/stripe.svg', alt: 'stripe', DocsLink: 'https://stripe.com/' },
+        { src: 'assets/images/DotNetCore.svg', alt: 'Identity', DocsLink: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity' },
+      ],
+      overview: [
+        'assets/images/overview-Images/Talabat/Talabat_1.jpeg',
+        'assets/images/overview-Images/Talabat/Talabat_2.jpeg',
+        'assets/images/overview-Images/Talabat/Talabat_3.jpeg',
+      ]
+    },
+    {
       title: 'Fresh Cart',
       description: 'E-Commerce website comes equipped with a range of features that include simplified user management (registration, login, and password reset), product browsing, product description viewing, adding and removing products from your cart, adding and removing products from your wishlist, and secure online payment transactions through an integrated payment gateway.',
       demo: 'https://abdalrhman80.github.io/Fresh-Cart-App',
@@ -20,7 +74,7 @@ export class ProjectsComponent implements OnInit {
         { src: 'assets/images/typescript.svg', alt: 'TypeScript', DocsLink: 'https://www.typescriptlang.org/' },
         { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
         { src: 'assets/images/angular.svg', alt: 'Angular', DocsLink: 'https://angular.io/' },
-        { src: '', alt: 'Api', DocsLink: '' },
+        
       ],
       overview: [
         'assets/images/overview-Images/freshCart/freshCart1.png',
@@ -44,7 +98,7 @@ export class ProjectsComponent implements OnInit {
         { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
         { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
         { src: 'assets/images/jquery.svg', alt: 'jQuery', DocsLink: 'https://jquery.com/' },
-        { src: '', alt: 'Api', DocsLink: '' },
+        
       ],
       overview: [
         'assets/images/overview-Images/Recipes-Website/Recipes-Website1.png',
@@ -66,7 +120,7 @@ export class ProjectsComponent implements OnInit {
         { src: 'assets/images/typescript.svg', alt: 'TypeScript', DocsLink: 'https://www.typescriptlang.org/' },
         { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
         { src: 'assets/images/angular.svg', alt: 'Angular', DocsLink: 'https://angular.io/' },
-        { src: '', alt: 'Api', DocsLink: '' },
+        
       ],
       overview: [
         'assets/images/overview-Images/Todo-List/Todo-List1.png',
@@ -108,58 +162,6 @@ export class ProjectsComponent implements OnInit {
       ],
       overview: [
         'assets/images/overview-Images/Bookmark.png',
-      ]
-    },
-    {
-      title: 'Weather Forecast',
-      description: 'The Weather-Forecast JS app is a user-friendly web tool for checking real-time weather forecasts. Developed with HTML, CSS, and JavaScript, it uses a weather API to provide users with essential details like temperature, humidity, and wind speed.',
-      demo: 'https://abdalrhman80.github.io/Weather-Forecast/',
-      githubLink: 'https://github.com/abdalrhman80/Weather-Forecast',
-      date: ' Jan 6 2023',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-        { src: '', alt: 'Api', DocsLink: '' },
-      ],
-      overview: [
-        'assets/images/overview-Images/Weather-Forecast.png',
-      ]
-    },
-    {
-      title: 'Login System',
-      description: `This system consists of: Sign-up form for users to register with a unique email address, name, and password, Sign-in form for logging in with email and password, Home page displaying the user's name upon successful sign-in.`,
-      demo: 'https://abdalrhman80.github.io/Smart-Login-System/',
-      githubLink: 'https://github.com/abdalrhman80/Smart-Login-System',
-      date: ' Jan 24 2023',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-      ],
-      overview: [
-        'assets/images/overview-Images/Login-System/Login-System1.png',
-        'assets/images/overview-Images/Login-System/Login-System2.png',
-      ]
-    },
-    {
-      title: 'Mealify',
-      description: `Simple responsive website with dark-mode feature`,
-      demo: 'https://abdalrhman80.github.io/Mealify/',
-      githubLink: 'https://github.com/abdalrhman80/Mealify/',
-      date: ' Nov 18 2023',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-      ],
-      overview: [
-        'assets/images/overview-Images/Mealify/Mealify1.png',
-        'assets/images/overview-Images/Mealify/Mealify2.png',
-        'assets/images/overview-Images/Mealify/Mealify3.png',
-        'assets/images/overview-Images/Mealify/Mealify4.png',
       ]
     },
   ]
