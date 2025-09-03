@@ -19,10 +19,7 @@ export class LandingSectionComponent implements OnInit {
       { title: "JavaScript", src: "assets/images/js.svg", alt: "JS" },
       { title: "TypeScript", src: "assets/images/typescript.svg", alt: "TS" },
       { title: "Bootstrap", src: "assets/images/bootstrap.svg", alt: "Bootstrap" },
-      { title: "SASS", src: "assets/images/sass.svg", alt: "SASS" },
-      { title: "jQuery", src: "assets/images/jquery.svg", alt: "jquery" },
       { title: "Angular", src: "assets/images/angular.svg", alt: "Angular" },
-      { title: "Primeng", src: "assets/images/primeng-logo.svg", alt: "Primeng" },
       { title: "Git", src: "assets/images/git.svg", alt: "Git" },
       { title: "Github", src: "assets/images/github.svg", alt: "Github" },
     ]

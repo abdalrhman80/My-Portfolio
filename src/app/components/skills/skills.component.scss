@@ -1,6 +1,5 @@
 .skill-title {
     display: flex;
-    // flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     color: var(--main-shadow);
@@ -36,12 +35,21 @@
 }
 
 .skill-card {
-    border-width: 1px;
-
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+    transition: all 0.2s ease;
 
     &:hover {
         transform: scale(1.01);
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        box-shadow: 0 4px 8px var(--main-shadow);
+    }
+
+    p {
+        text-align: center;
+        font-weight: 500;
     }
 }

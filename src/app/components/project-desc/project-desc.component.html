@@ -1,32 +1,29 @@
 <!-- <app-loader></app-loader> -->
-<section class="projectDescSection mt-5 ">
+<section class="projectDescSection mt-5">
     <div class="container">
         <h3 class="title-section pt-md-3 pb-4">{{project.title}}</h3>
-        <div class="project font-sm pb-4 mt-4 ">
+        <div class="project font-sm pb-4 mt-4">
             <div class="project-links d-flex align-items-center justify-content-center mb-3">
                 <a [href]="project.githubLink" target="_blank"
-                    class="github-link py-1 px-3 rounded-pill color-gray me-2 ">
-                    <i class="fa-solid fa-code me-2 "></i>
+                    class="github-link py-1 px-3 rounded-pill color-gray me-2">
+                    <i class="fa-solid fa-code me-2"></i>
                     <span>GitHub</span>
                 </a>
-                <a [href]="project.demo" target="_blank" class="demo-link py-1 px-3 rounded-pill color-gray me-2 ">
-                    <i class="fa-solid fa-link me-2 "></i>
+                <a *ngIf="project.demo !== '#'" [href]="project.demo" target="_blank" class="demo-link py-1 px-3 rounded-pill color-gray me-2">
+                    <i class="fa-solid fa-link me-2"></i>
                     <span>Demo</span>
                 </a>
             </div>
             <div class="project-technologies d-flex justify-content-center flex-wrap">
-                <a [href]="technology.DocsLink" target="_blank" *ngFor="let technology of project.technologies">
-                    <figure *ngIf="technology.src"
-                        class="cursor-pointer me-2 mb-2 rounded-pill d-flex justify-content-between align-items-center py-1 px-3">
-                        <img [src]='technology.src' [alt]="technology.alt">
-                        <figcaption class="color-gray ms-2">{{technology.alt}}</figcaption>
-                    </figure>
-                </a>
+                <span *ngFor="let technology of project.technologies"
+                    class="tech-badge cursor-pointer me-2 mb-2 rounded-pill d-flex justify-content-center align-items-center py-1 px-3 color-gray">
+                    {{technology.name}}
+                </span>
             </div>
         </div>
 
         <div class="project-desc mt-4 mb-4 pb-4">
-            <p class=" color-gray">{{project.description}}</p>
+            <p class="color-gray">{{project.description}}</p>
         </div>
 
         <div class="row">
@@ -42,7 +39,7 @@
         <p-galleria [value]="project.overview" [(visible)]="displayCustom" [(activeIndex)]="activeIndex"
             [containerStyle]="{ 'max-width': '850px' }" [circular]="true" [fullScreen]="true"
             [showItemNavigators]="project.overview.length > 1 ? true : false" [showThumbnails]="false"
-            (keyup.escape)=" displayCustom = false ">
+            (keyup.escape)="displayCustom = false">
             <ng-template pTemplate="item" let-item>
                 <img [src]="item" style="width: 100%; display: block;" />
             </ng-template>

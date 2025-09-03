@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -9,17 +10,86 @@ export class ProjectsComponent implements OnInit {
   chipTextArr: string[] = [];
   projects: any[] = [
     {
-      title: 'Shopping Cart',
-      description: 'MVC E-commerce Website using ASP.NET Core 6, with admin and customer areas, Implemented ASP.NET Core Identity for user management, along with Generic Repository, Unit of Work, and Specification Pattern for clean architecture and reusable queries',
+      title: 'Inventory Management System',
+      description: 'Developed a RESTful API using ASP.NET Core 8 with Clean Architecture and CQRS (MediatR). Implemented inventory features: product/category management, transaction tracking, and low-stock alerts. Added authentication, role-based access control, and automated workflows (emails for registration, password resets, system alerts).',
+      demo: '#',
+      githubLink: 'https://github.com/abdalrhman80/InventoryManagementSystme',
+      date: 'Aug 2025',
+      technologies: [
+        { name: 'C#' },
+        { name: 'ASP.NET Core 8' },
+        { name: 'Clean Architecture' },
+        { name: 'CQRS & MediatR' },
+        { name: 'Entity Framework Core' },
+        { name: 'MS SQL' },
+        { name: 'ASP.NET Identity' },
+        { name: 'JWT' },
+        { name: 'SMTP Email Services' },
+        { name: 'Serilog' },
+        { name: 'Fluent Validation' },
+        { name: 'AutoMapper' }
+      ],
+      overview: [
+      ]
+    },
+    {
+      title: 'E-Learning Platform',
+      description: 'Built a modular RESTful API with ASP.NET Core 8, following Clean Architecture principles. Enabled course management, content uploads, progress tracking, and automated email notifications. Supported authentication (traditional login, Google OAuth 2.0) and role-based access control.',
+      demo: '#',
+      githubLink: 'https://github.com/abdalrhman80/E-Learning-Platform',
+      date: 'Jul 2025',
+      technologies: [
+        { name: 'C#' },
+        { name: 'ASP.NET Core 8' },
+        { name: 'Clean Architecture' },
+        { name: 'Entity Framework Core' },
+        { name: 'MS SQL' },
+        { name: 'ASP.NET Identity' },
+        { name: 'JWT' },
+        { name: 'Google OAuth 2.0' },
+        { name: 'SMTP Email Services' },
+        { name: 'Serilog' },
+        { name: 'AutoMapper' }
+      ],
+      overview: [
+      ]
+    },
+    {
+      title: 'Restaurants API',
+      description: 'Designed a modular Web API using ASP.NET Core 8, integrating CQRS (MediatR). Applied layered architecture: Presentation, Application, Domain, and Infrastructure. Implemented unit/integration tests to ensure API reliability.',
+      demo: '#',
+      githubLink: 'https://github.com/abdalrhman80/Restaurants',
+      date: 'Jun 2025',
+      technologies: [
+        { name: 'C#' },
+        { name: 'ASP.NET Core 8' },
+        { name: 'Clean Architecture' },
+        { name: 'CQRS & MediatR' },
+        { name: 'Entity Framework Core' },
+        { name: 'MS SQL' },
+        { name: 'ASP.NET Identity' },
+        { name: 'JWT' },
+        { name: 'Serilog' },
+        { name: 'Fluent Validation' },
+        { name: 'AutoMapper' },
+        { name: 'xUnit' }
+      ],
+      overview: [
+      ]
+    },
+    {
+      title: 'Shopping Cart (E-commerce)',
+      description: 'Developed an MVC app with ASP.NET Core 6 and a 3-tier architecture. Built Admin (management) and Customer (browsing, cart, and checkout) areas. Integrated Stripe for secure payments.',
       demo: 'http://shoppingcart.runasp.net',
       githubLink: 'https://github.com/abdalrhman80/ShoppingCartMVC',
-      date: 'Nov 15 2024',
+      date: 'Nov 2024',
       technologies: [
-        { src: 'assets/images/Csharp.svg', alt: 'Csharp', DocsLink: 'https://dotnet.microsoft.com/en-us/languages/csharp' },
-        { src: 'assets/images/ASP.NET-Core-Boxed.png', alt: 'MVC', DocsLink: 'https://learn.microsoft.com/en-us/aspnet/core/mvc/overview' },
-        { src: 'assets/images/EFCore_Boxed.png', alt: 'EFCore', DocsLink: 'https://learn.microsoft.com/en-us/ef/core' },
-        { src: 'assets/images/stripe.svg', alt: 'stripe', DocsLink: 'https://stripe.com/' },
-        { src: 'assets/images/DotNetCore.svg', alt: 'Identity', DocsLink: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity' },
+        { name: 'C#' },
+        { name: 'ASP.NET Core 6 MVC' },
+        { name: '3-tier Architecture' },
+        { name: 'Entity Framework Core' },
+        { name: 'ASP.NET Core Identity' },
+        { name: 'Stripe Payment Gateway' }
       ],
       overview: [
         'assets/images/overview-Images/ShoppingCart/ShoppingCart_1.png',
@@ -42,39 +112,17 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      title: 'Talabat',
-      description: 'Scalable RESTful API using ASP.NET Core 6 with Onion Architecture, leveraging Generic Repository, Unit of Work, and Specification Pattern Integrated JWT authentication, Automapper, Stripe, and ASP.NET Core Identity..',
-      demo: 'https://github.com/abdalrhman80/Talabat',
-      githubLink: 'https://github.com/abdalrhman80/Talabat',
-      date: 'Oct 24 2024',
-      technologies: [
-        { src: 'assets/images/Csharp.svg', alt: 'Csharp', DocsLink: 'https://dotnet.microsoft.com/en-us/languages/csharp' },
-        { src: 'assets/images/ASP.NET-Core-Boxed.png', alt: 'WebAPI', DocsLink: 'https://dotnet.microsoft.com/en-us/apps/aspnet/apis' },
-        { src: 'assets/images/EFCore_Boxed.png', alt: 'EFCore', DocsLink: 'https://learn.microsoft.com/en-us/ef/core' },
-        { src: 'assets/images/JWT.png', alt: 'JWT', DocsLink: 'https://jwt.io/' },
-        { src: 'assets/images/Automapper.png', alt: 'Automapper', DocsLink: 'https://automapper.org/' },
-        { src: 'assets/images/stripe.svg', alt: 'stripe', DocsLink: 'https://stripe.com/' },
-        { src: 'assets/images/DotNetCore.svg', alt: 'Identity', DocsLink: 'https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity' },
-      ],
-      overview: [
-        'assets/images/overview-Images/Talabat/Talabat_1.jpeg',
-        'assets/images/overview-Images/Talabat/Talabat_2.jpeg',
-        'assets/images/overview-Images/Talabat/Talabat_3.jpeg',
-      ]
-    },
-    {
-      title: 'Fresh Cart',
-      description: 'E-Commerce website comes equipped with a range of features that include simplified user management (registration, login, and password reset), product browsing, product description viewing, adding and removing products from your cart, adding and removing products from your wishlist, and secure online payment transactions through an integrated payment gateway.',
+      title: 'Fresh Cart (Frontend)',
+      description: 'E-Commerce frontend application built with Angular. Features user management (registration, login, password reset), product browsing with detailed views, cart and wishlist functionality, and secure payment integration through external APIs.',
       demo: 'https://abdalrhman80.github.io/Fresh-Cart-App',
       githubLink: 'https://github.com/abdalrhman80/Fresh-Cart-App',
-      date: 'Feb 26 2024',
+      date: 'Feb 2024',
       technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/typescript.svg', alt: 'TypeScript', DocsLink: 'https://www.typescriptlang.org/' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-        { src: 'assets/images/angular.svg', alt: 'Angular', DocsLink: 'https://angular.io/' },
-        
+        { name: 'TypeScript' },
+        { name: 'Angular' },
+        { name: 'Bootstrap' },
+        { name: 'HTML' },
+        { name: 'CSS' }
       ],
       overview: [
         'assets/images/overview-Images/freshCart/freshCart1.png',
@@ -87,59 +135,18 @@ export class ProjectsComponent implements OnInit {
       ]
     },
     {
-      title: 'Recipes Website',
-      description: 'A recipe website is a platform where users discover diverse cooking instructions. These sites feature a wide array of recipes categorized by region, ingredient, and meal type. Users can easily search for specific recipes and even watch accompanying YouTube videos for guidance.',
-      demo: 'https://abdalrhman80.github.io/Recipes-Website/',
-      githubLink: 'https://github.com/abdalrhman80/Recipes-Website',
-      date: 'Jan 28 2023',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-        { src: 'assets/images/jquery.svg', alt: 'jQuery', DocsLink: 'https://jquery.com/' },
-        
-      ],
-      overview: [
-        'assets/images/overview-Images/Recipes-Website/Recipes-Website1.png',
-        'assets/images/overview-Images/Recipes-Website/Recipes-Website2.png',
-        'assets/images/overview-Images/Recipes-Website/Recipes-Website3.png',
-        'assets/images/overview-Images/Recipes-Website/Recipes-Website4.png',
-        'assets/images/overview-Images/Recipes-Website/Recipes-Website5.png',
-      ]
-    },
-    {
-      title: 'Todo-List',
-      description: 'A simple Todo List application. The app allows users to add, edit, and delete tasks.',
-      demo: 'https://abdalrhman80.github.io/Todo-List/',
-      githubLink: 'https://github.com/abdalrhman80/Todo-List/',
-      date: 'Mar 14 2024',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/typescript.svg', alt: 'TypeScript', DocsLink: 'https://www.typescriptlang.org/' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-        { src: 'assets/images/angular.svg', alt: 'Angular', DocsLink: 'https://angular.io/' },
-        
-      ],
-      overview: [
-        'assets/images/overview-Images/Todo-List/Todo-List1.png',
-        'assets/images/overview-Images/Todo-List/Todo-List2.png',
-      ]
-    },
-    {
       title: 'Personal Dashboard',
-      description: 'The website consists of three main sections: Bookmark, Todo, and Note, You can easily add, update, or delete bookmarks, todos, and notes, Customize your experience by changing the background with random ',
+      description: 'Full-stack productivity application with three main sections: Bookmarks, Todos, and Notes. Features complete CRUD operations, customizable backgrounds, and responsive design built with Angular and modern UI components.',
       demo: 'https://abdalrhman80.github.io/Personal-Dashboard/bookmarks',
       githubLink: 'https://github.com/abdalrhman80/Personal-Dashboard',
-      date: 'Mar 17 2024',
+      date: 'Mar 2024',
       technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/sass.svg', alt: 'SASS', DocsLink: 'https://sass-lang.com/' },
-        { src: 'assets/images/typescript.svg', alt: 'TypeScript', DocsLink: 'https://www.typescriptlang.org/' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-        { src: 'assets/images/angular.svg', alt: 'Angular', DocsLink: 'https://angular.io/' },
-        { src: 'assets/images/primeng-logo.svg', alt: 'Primeng', DocsLink: 'https://primeng.org/' },
+        { name: 'TypeScript' },
+        { name: 'Angular' },
+        { name: 'PrimeNG' },
+        { name: 'Bootstrap' },
+        { name: 'SASS' },
+        { name: 'HTML' }
       ],
       overview: [
         'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard1.png',
@@ -147,31 +154,17 @@ export class ProjectsComponent implements OnInit {
         'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard3.png',
         'assets/images/overview-Images/Personal-Dashboard/Personal-Dashboard4.png',
       ]
-    },
-    {
-      title: 'Bookmark',
-      description: `Application on CRUD operations, A user-friendly website URL bookmarker that allows you to save and organize your favorite websites with ease.`,
-      demo: 'https://abdalrhman80.github.io/Bookmark/',
-      githubLink: 'https://github.com/abdalrhman80/Bookmark',
-      date: ' Dec 23 2023',
-      technologies: [
-        { src: 'assets/images/html.svg', alt: 'HTML', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-        { src: 'assets/images/css.svg', alt: 'CSS', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-        { src: 'assets/images/js.svg', alt: 'JavaScript', DocsLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-        { src: 'assets/images/bootstrap.svg', alt: 'Bootstrap', DocsLink: 'https://getbootstrap.com/' },
-      ],
-      overview: [
-        'assets/images/overview-Images/Bookmark.png',
-      ]
-    },
+    }
   ]
+
   constructor(public _Router: Router) { }
+
   ngOnInit(): void {
     $('.projectSection').fadeOut(0).fadeIn(600);
   }
 
   showProjectDes(project: any, event: any) {
-    if (event.target.classList.contains('fa-link') || event.target.classList.contains('link-technology'))
+    if (event.target.classList.contains('fa-link'))
       return
     else {
       this._Router.navigate(['/ProjectDesc', project.title])

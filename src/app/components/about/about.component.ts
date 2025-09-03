@@ -8,30 +8,43 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   cards: any[] = [
     {
-      title: "Backend development",
+      title: "Backend Development",
       Src: 'assets/images/Development.svg',
       alt: 'Development',
-      description: 'Passionate about developing robust APIs, database structures, and backend systems, leveraging .NET technologies to build efficient applications.'
+      description: 'Specialized in building scalable RESTful APIs using C# and ASP.NET Core, with expertise in Clean Architecture, CQRS patterns, and Entity Framework Core for robust backend solutions.'
     },
     {
-      title: "Attention to details",
-      Src: 'assets/images/Search.svg',
-      alt: 'Search',
-      description: 'I focus on writing clean and efficient code, ensuring every aspect of backend logic works flawlessly to deliver a reliable experience.'
+      title: "Clean Architecture",
+      Src: 'assets/images/Architecture.svg',
+      alt: 'Architecture',
+      description: 'Proficient in implementing Clean Architecture principles, N-tier architecture, and design patterns like Repository, Unit of Work, and Specification patterns for maintainable code.'
     },
     {
-      title: "Continuous learning",
+      title: "Database Design",
+      Src: 'assets/images/Database.svg',
+      alt: 'Database',
+      description: 'Experienced in designing and optimizing database structures using Microsoft SQL Server, implementing efficient data access layers with Entity Framework Core.'
+    },
+    {
+      title: "Testing & Quality",
+      Src: 'assets/images/Testing.svg',
+      alt: 'Testing',
+      description: 'Committed to code quality through unit and integration testing using xUnit, ensuring reliable and maintainable applications with comprehensive test coverage.'
+    },
+    {
+      title: "Security",
+      Src: 'assets/images/Security.svg',
+      alt: 'Security',
+      description: 'Skilled in implementing secure authentication systems using ASP.NET Identity, JWT tokens, OAuth 2.0, and role-based access control for protected applications.'
+    },
+    {
+      title: "Continuous Learning",
       Src: 'assets/images/Learning.svg',
       alt: 'Learning',
-      description: 'I dedicated to learning and stay updated with the latest backend development trends, tools, and best practices, especially in the .NET ecosystem.'
-    },
-    {
-      title: "Responsive design",
-      Src: 'assets/images/Responsive.svg',
-      alt: 'Responsive',
-      description: ' I specialize in developing websites that seamlessly adapt across diverse screen sizes and devices.'
-    },
+      description: 'Dedicated to staying updated with the latest .NET ecosystem developments, backend technologies, and software engineering best practices through continuous learning and hands-on projects.'
+    }
   ]
+  
   ngOnInit(): void {
     $('.aboutSection').fadeOut(0).fadeIn(600);
   }

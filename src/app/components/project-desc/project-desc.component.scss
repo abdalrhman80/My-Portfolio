@@ -6,7 +6,7 @@ h3,
 
 .github-link,
 .demo-link,
-.project-technologies figure {
+.tech-badge {
     border: 1px solid var(--secondary);
     transition: all .2s;
 
@@ -15,10 +15,19 @@ h3,
     }
 }
 
-.project-technologies figure {
-    img {
-        width: 100%;
-        height: 15px;
+.tech-badge {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--secondary);
+    color: var(--white);
+    
+    &:hover {
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+        color: var(--white);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px var(--main-shadow);
     }
 }
 
